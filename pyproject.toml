@@ -5,10 +5,21 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "asyncio>=4.0.0",
     "dxcam>=0.3.0",
     "numpy>=2.4.4",
     "opencv-python>=4.13.0.92",
     "pywin32>=311",
+    "ultralytics>=8.4.51",
     "websockets>=16.0",
+    "torch",
+    "torchvision",
 ]
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu130" }
+torchvision = { index = "pytorch-cu130" }
