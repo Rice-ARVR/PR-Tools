@@ -1,1 +1,38 @@
 obstacle_detection/data/
+
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+
+# Secrets and credentials
+.env
+.env.*
+*.key
+*.pem
+secrets.json
+credentials.json
+
+# YOLO / ML training artifacts
+runs/
+*.pt
+*.onnx
+*.weights
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
